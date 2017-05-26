@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [TestSuite]" parallel="tests">
+  <parameter name="password" value="Epam1234"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="www.github.com"/>
+  <parameter name="username" value="PavanEpam"/>
+  <test name="fftest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Tests.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="LoginTestCase"/>
+        </methods>
+      </class> <!-- Tests.LoginTest -->
+    </classes>
+  </test> <!-- fftest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

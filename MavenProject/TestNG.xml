@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="tests" >
+  <!-- 
+   <parameter name="browser" value="firefox"/>
+   <parameter name="browser" value="ie"/>
+   <parameter name="browser" value="chrome"/> 
+   
+   <parameter name="url" value="www.github.com"/>
+   <parameter name="username" value="PavanEpam"/>
+   <parameter name="password" value="Epam1234"/>  
+    -->   
+    <test name="firefoxtest" preserve-order="true">
+    	<parameter name="browser" value="firefox"/>
+    	<parameter name="url" value="www.github.com"/>
+   		<parameter name="username" value="PavanEpam"/>
+   		<parameter name="password" value="Epam1234"/>
+   		
+        <classes>
+            <class name="Tests.LoginTest"/>
+            <class name="Tests.CreateNewReposityTest"/>           
+        </classes>
+        </test>      
+       <!--   
+        <test name="chrometest" preserve-order="true">
+         <parameter name="browser" value="chrome"/> 
+          <classes>
+            <class name="Tests.LoginTest"/>
+            <class name="Tests.CreateNewReposityTest"/>
+        </classes>
+    </test>
+        <test name="ietest" preserve-order="true">
+         <parameter name="browser" value="iebrowser"/> 
+          <classes>
+            <class name="Tests.LoginTest"/>
+            <class name="Tests.CreateNewReposityTest"/>
+        </classes>
+    </test>-->
+</suite>
